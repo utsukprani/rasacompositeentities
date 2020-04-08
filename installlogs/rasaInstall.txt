@@ -1,0 +1,350 @@
+(base) D:\rasaProjects\kb>pip install rasa
+Collecting rasa
+  Downloading https://files.pythonhosted.org/packages/79/be/bfea0825d83b19eb22d9ab72624dd45de30f08224e5d638e3667f2fbe9f4/rasa-1.9.5-py3-none-any.whl (496kB)
+    100% |████████████████████████████████| 501kB 771kB/s
+Requirement already satisfied: terminaltables<3.2.0,>=3.1.0 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (3.1.0)
+Collecting aiohttp<3.7,>=3.6 (from rasa)
+  Downloading https://files.pythonhosted.org/packages/0b/b3/744a16bdaba2e4df90f6ff10b9ade9c2dce3f01d94848f3949aa4ce7868d/aiohttp-3.6.2-cp37-cp37m-win_amd64.whl (649kB)
+    100% |████████████████████████████████| 655kB 407kB/s
+Requirement already satisfied: apscheduler<3.7,>=3.6 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (3.6.0)
+Requirement already satisfied: colorclass<2.3,>=2.2 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (2.2.0)
+Collecting mattermostwrapper<2.3,>=2.2 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/d7/fd/f1ce046ddaeffa5073f87d7800c27ad2c8e543e924a8418675c64aea6a14/mattermostwrapper-2.2.tar.gz
+Requirement already satisfied: gevent<1.5.0,>=1.4.0 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (1.4.0)
+Collecting attrs<19.4,>=19.3 (from rasa)
+  Downloading https://files.pythonhosted.org/packages/a2/db/4313ab3be961f7a763066401fb77f7748373b6094076ae2bda2806988af6/attrs-19.3.0-py2.py3-none-any.whl
+Requirement already satisfied: pytz<2020.0,>=2019.1 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (2019.1)
+Collecting pika<1.2.0,>=1.1.0 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/a1/ae/8bedf0e9f1c0c5d046db3a7428a4227fe36ec1b8e25607f3c38ac9bf513c/pika-1.1.0-py2.py3-none-any.whl
+Collecting tensorflow-addons>=0.7.1 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/70/e6/d11c4c16d8f9154bffaa61c8f946d82bccdcb06c58caa7597eb39b317396/tensorflow_addons-0.8.3-cp37-cp37m-win_amd64.whl
+Collecting scikit-learn<0.23,>=0.22 (from rasa)
+  Downloading https://files.pythonhosted.org/packages/1f/e3/e400f94e368a7b0d2432a88ab671a7f27c9159f177bbed68f7cce83b5848/scikit_learn-0.22.2.post1-cp37-cp37m-win_amd64.whl (6.5MB)
+    100% |████████████████████████████████| 6.5MB 516kB/s
+Collecting slackclient<3.0.0,>=2.0.0 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/95/01/5877fa0be43651bb0087388c5ee4a5bcedebc4d8c895fa63c80b74c2c611/slackclient-2.5.0-py2.py3-none-any.whl
+Collecting ujson<2.0,>=1.35 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/16/c4/79f3409bc710559015464e5f49b9879430d8f87498ecdc335899732e5377/ujson-1.35.tar.gz
+Requirement already satisfied: rocketchat_API<0.7.0,>=0.6.31 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (0.6.32)
+Collecting tensorflow-estimator==2.1.0 (from rasa)
+  Downloading https://files.pythonhosted.org/packages/18/90/b77c328a1304437ab1310b463e533fa7689f4bfc41549593056d812fab8e/tensorflow_estimator-2.1.0-py2.py3-none-any.whl (448kB)
+    100% |████████████████████████████████| 450kB 612kB/s
+Collecting questionary<1.6.0,>=1.5.1 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/09/03/1a1020649ab0cf91b289ba980c07d48bea54ece53a94530a6e2ae0bb5ebf/questionary-1.5.1-py3-none-any.whl
+Collecting sanic-cors<0.11.0,>=0.10.0b1 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/2d/33/5e1776669aa62dd9c65e3513425077915acb1758d6b19f08f830f27ce9a8/Sanic_Cors-0.10.0.post3-py2.py3-none-any.whl
+Requirement already satisfied: kafka-python<2.0,>=1.4 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (1.4.6)
+Collecting cloudpickle<1.3.0,>=1.2.0 (from rasa)
+  Downloading https://files.pythonhosted.org/packages/c1/49/334e279caa3231255725c8e860fa93e72083567625573421db8875846c14/cloudpickle-1.2.2-py2.py3-none-any.whl
+Requirement already satisfied: sklearn-crfsuite<0.4,>=0.3 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (0.3.6)
+Requirement already satisfied: PyJWT<1.8,>=1.7 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (1.7.1)
+Collecting tensorflow<2.2,>=2.1 (from rasa)
+  Downloading https://files.pythonhosted.org/packages/34/d5/ce8c17971067c0184c9045112b755be5461d5ce5253ef65a367e1298d7c5/tensorflow-2.1.0-cp37-cp37m-win_amd64.whl (355.8MB)
+    100% |████████████████████████████████| 355.9MB 64kB/s
+Requirement already satisfied: fbmessenger<6.1.0,>=6.0.0 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (6.0.0)
+Requirement already satisfied: colorhash<1.1.0,>=1.0.2 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (1.0.2)
+Collecting setuptools>=41.0.0 (from rasa)
+  Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /simple/setuptools/
+  Downloading https://files.pythonhosted.org/packages/a0/df/635cdb901ee4a8a42ec68e480c49f85f4c59e8816effbf57d9e6ee8b3588/setuptools-46.1.3-py3-none-any.whl (582kB)
+    100% |████████████████████████████████| 583kB 389kB/s
+Collecting boto3<2.0,>=1.12 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/c5/68/de95f9a39f6bf5c34b9841eca755984f8bdd9a701187f8ce845b6d153a39/boto3-1.12.38-py2.py3-none-any.whl
+Requirement already satisfied: webexteamssdk<1.2.0,>=1.1.1 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (1.1.1)
+Collecting tensorflow_hub<0.8,>=0.7 (from rasa)
+  Downloading https://files.pythonhosted.org/packages/00/0e/a91780d07592b1abf9c91344ce459472cc19db3b67fdf3a61dca6ebb2f5c/tensorflow_hub-0.7.0-py2.py3-none-any.whl (89kB)
+    100% |████████████████████████████████| 92kB 373kB/s
+Collecting psycopg2-binary<2.9.0,>=2.8.2 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/2f/00/9c3cea3ed03140f66dd601e557f5b8e5244e6efae60fe557bce4bb71682c/psycopg2_binary-2.8.5-cp37-cp37m-win_amd64.whl
+Requirement already satisfied: async_generator<1.11,>=1.10 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (1.10)
+Requirement already satisfied: ruamel.yaml<0.16,>=0.15 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (0.15.97)
+Collecting multidict<5.0,>=4.6 (from rasa)
+  Downloading https://files.pythonhosted.org/packages/d9/3c/d1c93ae89f16f280a506b1ef02078d24865e3fa545177eeff1181b03265b/multidict-4.7.5-cp37-cp37m-win_amd64.whl (48kB)
+    100% |████████████████████████████████| 51kB 567kB/s
+Requirement already satisfied: python-telegram-bot<12.0,>=11.1 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (11.1.0)
+Requirement already satisfied: pykwalify<1.8.0,>=1.7.0 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (1.7.0)
+Requirement already satisfied: python-dateutil<2.9,>=2.8 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (2.8.0)
+Collecting requests<3.0,>=2.23 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/1a/70/1935c770cb3be6e3a8b78ced23d7e0f3b187f5cbfab4749523ed65d7c9b1/requests-2.23.0-py2.py3-none-any.whl
+Requirement already satisfied: sanic-jwt<1.4.0,>=1.3.2 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (1.3.2)
+Collecting tensorflow-probability<0.8,>=0.7 (from rasa)
+  Downloading https://files.pythonhosted.org/packages/3e/3a/c10b6c22320531c774402ac7186d1b673374e2a9d12502cbc8d811e4601c/tensorflow_probability-0.7.0-py2.py3-none-any.whl (981kB)
+    100% |████████████████████████████████| 983kB 347kB/s
+Collecting rasa-sdk<2.0.0,>=1.9.0 (from rasa)
+  Downloading https://files.pythonhosted.org/packages/3f/1f/5010efbc49b8bffa82eee1e0223f79e413fb915fdfe9bbbc7c6c500436a3/rasa_sdk-1.9.0-py3-none-any.whl
+Collecting oauth2client==4.1.3 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/95/a9/4f25a14d23f0786b64875b91784607c2277eff25d48f915e39ff0cff505a/oauth2client-4.1.3-py2.py3-none-any.whl
+Collecting python-socketio<4.5,>=4.4 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/11/e0/71c90fbfc534108d0869ff5f92c16e4bc9b1347439b9022e815c03ff4193/python_socketio-4.4.0-py2.py3-none-any.whl
+Requirement already satisfied: coloredlogs<11.0,>=10.0 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (10.0)
+Requirement already satisfied: pydot<1.5,>=1.4 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (1.4.1)
+Collecting jsonpickle<1.4,>=1.3 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/7e/6b/fbb2d499b96861a18c1641f6fefe775110d3faba65c1524950e9ad64824a/jsonpickle-1.3-py2.py3-none-any.whl
+Collecting scipy<2.0.0,>=1.4.1 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/61/51/046cbc61c7607e5ecead6ff1a9453fba5e7e47a5ea8d608cc7036586a5ef/scipy-1.4.1-cp37-cp37m-win_amd64.whl
+Collecting SQLAlchemy<1.4.0,>=1.3.3 (from rasa)
+  Downloading https://files.pythonhosted.org/packages/7f/4b/adfb1f03da7f50db054a5b728d32dbfae8937754cfa159efa0216a3758d1/SQLAlchemy-1.3.16.tar.gz (6.1MB)
+    100% |████████████████████████████████| 6.1MB 473kB/s
+Requirement already satisfied: tqdm<4.32.0,>=4.31.0 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (4.31.1)
+Collecting redis<4.0,>=3.4 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/f0/05/1fc7feedc19c123e7a95cfc9e7892eb6cdd2e5df4e9e8af6384349c1cc3d/redis-3.4.1-py2.py3-none-any.whl
+Collecting networkx<2.5.0,>=2.4.0 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/41/8f/dd6a8e85946def36e4f2c69c84219af0fa5e832b018c970e92f2ad337e45/networkx-2.4-py3-none-any.whl
+Requirement already satisfied: numpy<2.0,>=1.16 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (1.16.2)
+Requirement already satisfied: pymongo[srv,tls]<3.9.0,>=3.8.0 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (3.8.0)
+Requirement already satisfied: prompt-toolkit<3.0,>=2.0 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (2.0.9)
+Collecting twilio<6.27,>=6.26 (from rasa)
+  Using cached https://files.pythonhosted.org/packages/23/e6/630676e9749be27879957dcac080dbafa2a8bf2cf47db3f7247862dd6277/twilio-6.26.3-py2.py3-none-any.whl
+Collecting matplotlib<3.2,>=3.1 (from rasa)
+  Downloading https://files.pythonhosted.org/packages/93/22/a3cef48d25ad94f540bb3dd91490fb22afe0911acc3390b1929527ad4e4f/matplotlib-3.1.3-cp37-cp37m-win_amd64.whl (9.1MB)
+    100% |████████████████████████████████| 9.1MB 943kB/s
+Collecting absl-py<0.10,>=0.9 (from rasa)
+  Downloading https://files.pythonhosted.org/packages/1a/53/9243c600e047bd4c3df9e69cfabc1e8004a82cac2e0c484580a78a94ba2a/absl-py-0.9.0.tar.gz (104kB)
+    100% |████████████████████████████████| 112kB 1.1MB/s
+Collecting jsonschema<3.3,>=3.2 (from rasa)
+  Downloading https://files.pythonhosted.org/packages/c5/8f/51e89ce52a085483359217bc72cdbf6e75ee595d5b1d4b5ade40c7e018b8/jsonschema-3.2.0-py2.py3-none-any.whl (56kB)
+    100% |████████████████████████████████| 61kB 1.9MB/s
+Requirement already satisfied: packaging<19.1,>=19.0 in c:\users\hpuser\anaconda3\lib\site-packages (from rasa) (19.0)
+Collecting python-engineio<3.12,>=3.11 (from rasa)
+  Downloading https://files.pythonhosted.org/packages/97/16/66b05477d6057238e2fc1f8cfb1dfd0b3adad1351c30ad20934f09db5891/python_engineio-3.11.2-py2.py3-none-any.whl (49kB)
+    100% |████████████████████████████████| 51kB 61kB/s
+Collecting sanic<20.0.0,>=19.12.2 (from rasa)
+  Downloading https://files.pythonhosted.org/packages/90/54/17f1e496599214dede67e37e019ce2f210b7861d2dd39b92ac4d3d08e83a/sanic-19.12.2-py3-none-any.whl (72kB)
+    100% |████████████████████████████████| 81kB 197kB/s
+Requirement already satisfied: async-timeout<4.0,>=3.0 in c:\users\hpuser\anaconda3\lib\site-packages (from aiohttp<3.7,>=3.6->rasa) (3.0.1)
+Requirement already satisfied: chardet<4.0,>=2.0 in c:\users\hpuser\anaconda3\lib\site-packages (from aiohttp<3.7,>=3.6->rasa) (3.0.4)
+Requirement already satisfied: yarl<2.0,>=1.0 in c:\users\hpuser\anaconda3\lib\site-packages (from aiohttp<3.7,>=3.6->rasa) (1.3.0)
+Requirement already satisfied: six>=1.4.0 in c:\users\hpuser\anaconda3\lib\site-packages (from apscheduler<3.7,>=3.6->rasa) (1.12.0)
+Requirement already satisfied: tzlocal>=1.2 in c:\users\hpuser\anaconda3\lib\site-packages (from apscheduler<3.7,>=3.6->rasa) (1.5.1)
+Requirement already satisfied: greenlet>=0.4.14 in c:\users\hpuser\anaconda3\lib\site-packages (from gevent<1.5.0,>=1.4.0->rasa) (0.4.15)
+Requirement already satisfied: cffi>=1.11.5 in c:\users\hpuser\anaconda3\lib\site-packages (from gevent<1.5.0,>=1.4.0->rasa) (1.12.2)
+Collecting typeguard (from tensorflow-addons>=0.7.1->rasa)
+  Downloading https://files.pythonhosted.org/packages/06/37/d236aec27f8a8eed66f1a17116eb51684528cf8005a6883f879fe2e842ae/typeguard-2.7.1-py3-none-any.whl
+Collecting joblib>=0.11 (from scikit-learn<0.23,>=0.22->rasa)
+  Downloading https://files.pythonhosted.org/packages/28/5c/cf6a2b65a321c4a209efcdf64c2689efae2cb62661f8f6f4bb28547cf1bf/joblib-0.14.1-py2.py3-none-any.whl (294kB)
+    100% |████████████████████████████████| 296kB 695kB/s
+Collecting sanic-plugins-framework>=0.9.0 (from sanic-cors<0.11.0,>=0.10.0b1->rasa)
+  Downloading https://files.pythonhosted.org/packages/8f/38/4e828a234c64d2f0215f6ad791fa0b49c631b56d3d13269e8eae501fb953/Sanic_Plugins_Framework-0.9.2-py2.py3-none-any.whl
+Requirement already satisfied: python-crfsuite>=0.8.3 in c:\users\hpuser\anaconda3\lib\site-packages (from sklearn-crfsuite<0.4,>=0.3->rasa) (0.9.6)
+Requirement already satisfied: tabulate in c:\users\hpuser\anaconda3\lib\site-packages (from sklearn-crfsuite<0.4,>=0.3->rasa) (0.8.3)
+Requirement already satisfied: grpcio>=1.8.6 in c:\users\hpuser\anaconda3\lib\site-packages (from tensorflow<2.2,>=2.1->rasa) (1.21.1)
+Collecting tensorboard<2.2.0,>=2.1.0 (from tensorflow<2.2,>=2.1->rasa)
+  Downloading https://files.pythonhosted.org/packages/d9/41/bbf49b61370e4f4d245d4c6051dfb6db80cec672605c91b1652ac8cc3d38/tensorboard-2.1.1-py3-none-any.whl (3.8MB)
+    100% |████████████████████████████████| 3.9MB 613kB/s
+Requirement already satisfied: termcolor>=1.1.0 in c:\users\hpuser\anaconda3\lib\site-packages (from tensorflow<2.2,>=2.1->rasa) (1.1.0)
+Requirement already satisfied: protobuf>=3.8.0 in c:\users\hpuser\anaconda3\lib\site-packages (from tensorflow<2.2,>=2.1->rasa) (3.8.0)
+Requirement already satisfied: keras-applications>=1.0.8 in c:\users\hpuser\anaconda3\lib\site-packages (from tensorflow<2.2,>=2.1->rasa) (1.0.8)
+Requirement already satisfied: wheel>=0.26; python_version >= "3" in c:\users\hpuser\anaconda3\lib\site-packages (from tensorflow<2.2,>=2.1->rasa) (0.33.1)
+Requirement already satisfied: astor>=0.6.0 in c:\users\hpuser\anaconda3\lib\site-packages (from tensorflow<2.2,>=2.1->rasa) (0.8.0)
+Collecting opt-einsum>=2.3.2 (from tensorflow<2.2,>=2.1->rasa)
+  Downloading https://files.pythonhosted.org/packages/b2/49/2233e63052d5686c72131b579837ddfb98ba9dd0b92bb91efcb441ada8ce/opt_einsum-3.2.0-py3-none-any.whl (63kB)
+    100% |████████████████████████████████| 71kB 2.7MB/s
+Requirement already satisfied: keras-preprocessing>=1.1.0 in c:\users\hpuser\anaconda3\lib\site-packages (from tensorflow<2.2,>=2.1->rasa) (1.1.0)
+Requirement already satisfied: gast==0.2.2 in c:\users\hpuser\anaconda3\lib\site-packages (from tensorflow<2.2,>=2.1->rasa) (0.2.2)
+Requirement already satisfied: wrapt>=1.11.1 in c:\users\hpuser\anaconda3\lib\site-packages (from tensorflow<2.2,>=2.1->rasa) (1.11.1)
+Collecting google-pasta>=0.1.6 (from tensorflow<2.2,>=2.1->rasa)
+  Downloading https://files.pythonhosted.org/packages/a3/de/c648ef6835192e6e2cc03f40b19eeda4382c49b5bafb43d88b931c4c74ac/google_pasta-0.2.0-py3-none-any.whl (57kB)
+    100% |████████████████████████████████| 61kB 2.0MB/s
+Requirement already satisfied: jmespath<1.0.0,>=0.7.1 in c:\users\hpuser\anaconda3\lib\site-packages (from boto3<2.0,>=1.12->rasa) (0.9.4)
+Collecting s3transfer<0.4.0,>=0.3.0 (from boto3<2.0,>=1.12->rasa)
+  Downloading https://files.pythonhosted.org/packages/69/79/e6afb3d8b0b4e96cefbdc690f741d7dd24547ff1f94240c997a26fa908d3/s3transfer-0.3.3-py2.py3-none-any.whl (69kB)
+    100% |████████████████████████████████| 71kB 563kB/s
+Collecting botocore<1.16.0,>=1.15.38 (from boto3<2.0,>=1.12->rasa)
+  Downloading https://files.pythonhosted.org/packages/c7/72/9f1b430fa935c64fcb73a84c2d502fc13073a511cd54c25cca271b5540b3/botocore-1.15.38-py2.py3-none-any.whl (6.1MB)
+    100% |████████████████████████████████| 6.1MB 820kB/s
+Requirement already satisfied: future in c:\users\hpuser\anaconda3\lib\site-packages (from webexteamssdk<1.2.0,>=1.1.1->rasa) (0.17.1)
+Requirement already satisfied: requests-toolbelt in c:\users\hpuser\anaconda3\lib\site-packages (from webexteamssdk<1.2.0,>=1.1.1->rasa) (0.9.1)
+Requirement already satisfied: cryptography in c:\users\hpuser\anaconda3\lib\site-packages (from python-telegram-bot<12.0,>=11.1->rasa) (2.6.1)
+Requirement already satisfied: certifi in c:\users\hpuser\anaconda3\lib\site-packages (from python-telegram-bot<12.0,>=11.1->rasa) (2019.3.9)
+Requirement already satisfied: docopt>=0.6.2 in c:\users\hpuser\anaconda3\lib\site-packages (from pykwalify<1.8.0,>=1.7.0->rasa) (0.6.2)
+Requirement already satisfied: PyYAML>=3.11 in c:\users\hpuser\anaconda3\lib\site-packages (from pykwalify<1.8.0,>=1.7.0->rasa) (5.1)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in c:\users\hpuser\anaconda3\lib\site-packages (from requests<3.0,>=2.23->rasa) (1.24.1)
+Requirement already satisfied: idna<3,>=2.5 in c:\users\hpuser\anaconda3\lib\site-packages (from requests<3.0,>=2.23->rasa) (2.8)
+Requirement already satisfied: decorator in c:\users\hpuser\anaconda3\lib\site-packages (from tensorflow-probability<0.8,>=0.7->rasa) (4.4.0)
+Collecting pyasn1-modules>=0.0.5 (from oauth2client==4.1.3->rasa)
+  Downloading https://files.pythonhosted.org/packages/95/de/214830a981892a3e286c3794f41ae67a4495df1108c3da8a9f62159b9a9d/pyasn1_modules-0.2.8-py2.py3-none-any.whl (155kB)
+    100% |████████████████████████████████| 163kB 688kB/s
+Collecting pyasn1>=0.1.7 (from oauth2client==4.1.3->rasa)
+  Downloading https://files.pythonhosted.org/packages/62/1e/a94a8d635fa3ce4cfc7f506003548d0a2447ae76fd5ca53932970fe3053f/pyasn1-0.4.8-py2.py3-none-any.whl (77kB)
+    100% |████████████████████████████████| 81kB 2.7MB/s
+Collecting rsa>=3.1.4 (from oauth2client==4.1.3->rasa)
+  Downloading https://files.pythonhosted.org/packages/02/e5/38518af393f7c214357079ce67a317307936896e961e35450b70fad2a9cf/rsa-4.0-py2.py3-none-any.whl
+Collecting httplib2>=0.9.1 (from oauth2client==4.1.3->rasa)
+  Downloading https://files.pythonhosted.org/packages/d5/42/82ad873222aa56e504a86e3c03dc5797ea32daea0fa140419fbbc557e5de/httplib2-0.17.1-py3-none-any.whl (95kB)
+    100% |████████████████████████████████| 102kB 89kB/s
+Requirement already satisfied: colorama; sys_platform == "win32" in c:\users\hpuser\anaconda3\lib\site-packages (from coloredlogs<11.0,>=10.0->rasa) (0.4.1)
+Requirement already satisfied: humanfriendly>=4.7 in c:\users\hpuser\anaconda3\lib\site-packages (from coloredlogs<11.0,>=10.0->rasa) (4.18)
+Requirement already satisfied: pyparsing>=2.1.4 in c:\users\hpuser\anaconda3\lib\site-packages (from pydot<1.5,>=1.4->rasa) (2.3.1)
+Collecting dnspython<2.0.0,>=1.13.0; extra == "srv" (from pymongo[srv,tls]<3.9.0,>=3.8.0->rasa)
+  Downloading https://files.pythonhosted.org/packages/ec/d3/3aa0e7213ef72b8585747aa0e271a9523e713813b9a20177ebe1e939deb0/dnspython-1.16.0-py2.py3-none-any.whl (188kB)
+    100% |████████████████████████████████| 194kB 1.0MB/s
+Requirement already satisfied: wcwidth in c:\users\hpuser\anaconda3\lib\site-packages (from prompt-toolkit<3.0,>=2.0->rasa) (0.1.7)
+Requirement already satisfied: pysocks; python_version >= "3.0" in c:\users\hpuser\anaconda3\lib\site-packages (from twilio<6.27,>=6.26->rasa) (1.6.8)
+Requirement already satisfied: cycler>=0.10 in c:\users\hpuser\anaconda3\lib\site-packages (from matplotlib<3.2,>=3.1->rasa) (0.10.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in c:\users\hpuser\anaconda3\lib\site-packages (from matplotlib<3.2,>=3.1->rasa) (1.0.1)
+Requirement already satisfied: importlib-metadata; python_version < "3.8" in c:\users\hpuser\anaconda3\lib\site-packages (from jsonschema<3.3,>=3.2->rasa) (0.0.0)
+Requirement already satisfied: pyrsistent>=0.14.0 in c:\users\hpuser\anaconda3\lib\site-packages (from jsonschema<3.3,>=3.2->rasa) (0.14.11)
+Collecting websockets<9.0,>=7.0 (from sanic<20.0.0,>=19.12.2->rasa)
+  Downloading https://files.pythonhosted.org/packages/56/01/1f61610f1eb7f9a8e8fdc607a89dd2fae778e6e43290d7e153ebe724adb5/websockets-8.1-cp37-cp37m-win_amd64.whl (66kB)
+    100% |████████████████████████████████| 71kB 732kB/s
+Collecting httpx==0.9.3 (from sanic<20.0.0,>=19.12.2->rasa)
+  Downloading https://files.pythonhosted.org/packages/d5/17/3f1ec0593b38c82069e745c849114267e980c9fb1254a27ab50f72040251/httpx-0.9.3-py2.py3-none-any.whl (64kB)
+    100% |████████████████████████████████| 71kB 780kB/s
+Requirement already satisfied: httptools>=0.0.10 in c:\users\hpuser\anaconda3\lib\site-packages (from sanic<20.0.0,>=19.12.2->rasa) (0.0.13)
+Requirement already satisfied: aiofiles>=0.3.0 in c:\users\hpuser\anaconda3\lib\site-packages (from sanic<20.0.0,>=19.12.2->rasa) (0.4.0)
+Requirement already satisfied: pycparser in c:\users\hpuser\anaconda3\lib\site-packages (from cffi>=1.11.5->gevent<1.5.0,>=1.4.0->rasa) (2.19)
+Collecting google-auth-oauthlib<0.5,>=0.4.1 (from tensorboard<2.2.0,>=2.1.0->tensorflow<2.2,>=2.1->rasa)
+  Downloading https://files.pythonhosted.org/packages/7b/b8/88def36e74bee9fce511c9519571f4e485e890093ab7442284f4ffaef60b/google_auth_oauthlib-0.4.1-py2.py3-none-any.whl
+Requirement already satisfied: markdown>=2.6.8 in c:\users\hpuser\anaconda3\lib\site-packages (from tensorboard<2.2.0,>=2.1.0->tensorflow<2.2,>=2.1->rasa) (3.1.1)
+Collecting google-auth<2,>=1.6.3 (from tensorboard<2.2.0,>=2.1.0->tensorflow<2.2,>=2.1->rasa)
+  Downloading https://files.pythonhosted.org/packages/dc/1a/c3c2f3aa4190d8154a146ad33aa5479c8d193cc6211abe5c535921d93389/google_auth-1.13.1-py2.py3-none-any.whl (87kB)
+    100% |████████████████████████████████| 92kB 371kB/s
+Requirement already satisfied: werkzeug>=0.11.15 in c:\users\hpuser\anaconda3\lib\site-packages (from tensorboard<2.2.0,>=2.1.0->tensorflow<2.2,>=2.1->rasa) (0.14.1)
+Requirement already satisfied: h5py in c:\users\hpuser\anaconda3\lib\site-packages (from keras-applications>=1.0.8->tensorflow<2.2,>=2.1->rasa) (2.9.0)
+Requirement already satisfied: docutils<0.16,>=0.10 in c:\users\hpuser\anaconda3\lib\site-packages (from botocore<1.16.0,>=1.15.38->boto3<2.0,>=1.12->rasa) (0.14)
+Requirement already satisfied: asn1crypto>=0.21.0 in c:\users\hpuser\anaconda3\lib\site-packages (from cryptography->python-telegram-bot<12.0,>=11.1->rasa) (0.24.0)
+Requirement already satisfied: pyreadline; sys_platform == "win32" in c:\users\hpuser\anaconda3\lib\site-packages (from humanfriendly>=4.7->coloredlogs<11.0,>=10.0->rasa) (2.1)
+Requirement already satisfied: zipp>=0.3.2 in c:\users\hpuser\anaconda3\lib\site-packages (from importlib-metadata; python_version < "3.8"->jsonschema<3.3,>=3.2->rasa) (0.3.3)
+Collecting rfc3986<2,>=1.3 (from httpx==0.9.3->sanic<20.0.0,>=19.12.2->rasa)
+  Downloading https://files.pythonhosted.org/packages/78/be/7b8b99fd74ff5684225f50dd0e865393d2265656ef3b4ba9eaaaffe622b8/rfc3986-1.4.0-py2.py3-none-any.whl
+Collecting sniffio==1.* (from httpx==0.9.3->sanic<20.0.0,>=19.12.2->rasa)
+  Downloading https://files.pythonhosted.org/packages/b3/82/4bd4b7d9c0d1dc0fbfbc2a1e00138e7f3ab85bc239358fe9b78aa2ab586d/sniffio-1.1.0-py3-none-any.whl
+Collecting hstspreload (from httpx==0.9.3->sanic<20.0.0,>=19.12.2->rasa)
+  Downloading https://files.pythonhosted.org/packages/e7/89/d8c58d46d6653da2de4f0219c20025a113cfc3d0e9237487c715dcb88b13/hstspreload-2020.4.7-py3-none-any.whl (863kB)
+    100% |████████████████████████████████| 870kB 952kB/s
+Collecting h11==0.8.* (from httpx==0.9.3->sanic<20.0.0,>=19.12.2->rasa)
+  Downloading https://files.pythonhosted.org/packages/f9/f3/8e4cf5fa1a3d8bda942a0b1cf92f87815494216fd439f82eb99073141ba0/h11-0.8.1-py2.py3-none-any.whl (55kB)
+    100% |████████████████████████████████| 61kB 2.3MB/s
+Collecting h2==3.* (from httpx==0.9.3->sanic<20.0.0,>=19.12.2->rasa)
+  Downloading https://files.pythonhosted.org/packages/25/de/da019bcc539eeab02f6d45836f23858ac467f584bfec7a526ef200242afe/h2-3.2.0-py2.py3-none-any.whl (65kB)
+    100% |████████████████████████████████| 71kB 121kB/s
+Collecting requests-oauthlib>=0.7.0 (from google-auth-oauthlib<0.5,>=0.4.1->tensorboard<2.2.0,>=2.1.0->tensorflow<2.2,>=2.1->rasa)
+  Downloading https://files.pythonhosted.org/packages/a3/12/b92740d845ab62ea4edf04d2f4164d82532b5a0b03836d4d4e71c6f3d379/requests_oauthlib-1.3.0-py2.py3-none-any.whl
+Collecting cachetools<5.0,>=2.0.0 (from google-auth<2,>=1.6.3->tensorboard<2.2.0,>=2.1.0->tensorflow<2.2,>=2.1->rasa)
+  Downloading https://files.pythonhosted.org/packages/b3/59/524ffb454d05001e2be74c14745b485681c6ed5f2e625f71d135704c0909/cachetools-4.1.0-py3-none-any.whl
+Collecting hyperframe<6,>=5.2.0 (from h2==3.*->httpx==0.9.3->sanic<20.0.0,>=19.12.2->rasa)
+  Downloading https://files.pythonhosted.org/packages/19/0c/bf88182bcb5dce3094e2f3e4fe20db28a9928cb7bd5b08024030e4b140db/hyperframe-5.2.0-py2.py3-none-any.whl
+Collecting hpack<4,>=3.0 (from h2==3.*->httpx==0.9.3->sanic<20.0.0,>=19.12.2->rasa)
+  Downloading https://files.pythonhosted.org/packages/8a/cc/e53517f4a1e13f74776ca93271caef378dadec14d71c61c949d759d3db69/hpack-3.0.0-py2.py3-none-any.whl
+Collecting oauthlib>=3.0.0 (from requests-oauthlib>=0.7.0->google-auth-oauthlib<0.5,>=0.4.1->tensorboard<2.2.0,>=2.1.0->tensorflow<2.2,>=2.1->rasa)
+  Downloading https://files.pythonhosted.org/packages/05/57/ce2e7a8fa7c0afb54a0581b14a65b56e62b5759dbc98e80627142b8a3704/oauthlib-3.1.0-py2.py3-none-any.whl (147kB)
+    100% |████████████████████████████████| 153kB 593kB/s
+Building wheels for collected packages: mattermostwrapper, ujson, SQLAlchemy, absl-py
+  Building wheel for mattermostwrapper (setup.py) ... done
+  Stored in directory: C:\Users\hpuser\AppData\Local\pip\Cache\wheels\c5\47\19\47188b3036316651250c4f7df23d59a3b524c82921bfb6daa3
+  Building wheel for ujson (setup.py) ... done
+  Stored in directory: C:\Users\hpuser\AppData\Local\pip\Cache\wheels\28\77\e4\0311145b9c2e2f01470e744855131f9e34d6919687550f87d1
+  Building wheel for SQLAlchemy (setup.py) ... done
+  Stored in directory: C:\Users\hpuser\AppData\Local\pip\Cache\wheels\91\99\39\e1434223d37ef7b6718bdd1d3c0e672dac7ff836419ab79f94
+  Building wheel for absl-py (setup.py) ... done
+  Stored in directory: C:\Users\hpuser\AppData\Local\pip\Cache\wheels\8e\28\49\fad4e7f0b9a1227708cbbee4487ac8558a7334849cb81c813d
+Successfully built mattermostwrapper ujson SQLAlchemy absl-py
+spyder 3.3.3 requires pyqt5<=5.12; python_version >= "3", which is not installed.
+tensorboard 2.1.1 has requirement grpcio>=1.24.3, but you'll have grpcio 1.21.1 which is incompatible.
+rasa-x 0.19.1 has requirement jsonschema~=2.6.0, but you'll have jsonschema 3.2.0 which is incompatible.
+rasa-x 0.19.1 has requirement pika~=1.0.0, but you'll have pika 1.1.0 which is incompatible.
+rasa-x 0.19.1 has requirement rasa~=1.1.0, but you'll have rasa 1.9.5 which is incompatible.
+rasa-x 0.19.1 has requirement sanic~=19.3.1, but you'll have sanic 19.12.2 which is incompatible.
+rasa-x 0.19.1 has requirement sanic-cors~=0.9.6, but you'll have sanic-cors 0.10.0.post3 which is incompatible.
+Installing collected packages: multidict, attrs, aiohttp, requests, mattermostwrapper, pika, typeguard, tensorflow-addons, scipy, joblib, scikit-learn, slackclient, ujson, tensorflow-estimator, questionary, websockets, rfc3986, sniffio, hstspreload, h11, hyperframe, hpack, h2, httpx, sanic, sanic-plugins-framework, sanic-cors, cloudpickle, absl-py, setuptools, oauthlib, requests-oauthlib, pyasn1, rsa, pyasn1-modules, cachetools, google-auth, google-auth-oauthlib, tensorboard, opt-einsum, google-pasta, tensorflow, botocore, s3transfer, boto3, tensorflow-hub, psycopg2-binary, tensorflow-probability, rasa-sdk, httplib2, oauth2client, python-engineio, python-socketio, jsonpickle, SQLAlchemy, redis, networkx, twilio, matplotlib, jsonschema, rasa, dnspython
+  Found existing installation: multidict 4.5.2
+    Uninstalling multidict-4.5.2:
+      Successfully uninstalled multidict-4.5.2
+  Found existing installation: attrs 19.1.0
+    Uninstalling attrs-19.1.0:
+      Successfully uninstalled attrs-19.1.0
+  Found existing installation: aiohttp 3.5.4
+    Uninstalling aiohttp-3.5.4:
+      Successfully uninstalled aiohttp-3.5.4
+  Found existing installation: requests 2.22.0
+    Uninstalling requests-2.22.0:
+      Successfully uninstalled requests-2.22.0
+  Found existing installation: mattermostwrapper 2.1
+    Uninstalling mattermostwrapper-2.1:
+      Successfully uninstalled mattermostwrapper-2.1
+  Found existing installation: pika 1.0.1
+    Uninstalling pika-1.0.1:
+      Successfully uninstalled pika-1.0.1
+  Found existing installation: scipy 1.2.1
+    Uninstalling scipy-1.2.1:
+      Successfully uninstalled scipy-1.2.1
+  Found existing installation: scikit-learn 0.20.3
+    Uninstalling scikit-learn-0.20.3:
+      Successfully uninstalled scikit-learn-0.20.3
+  Found existing installation: slackclient 1.3.2
+    Uninstalling slackclient-1.3.2:
+      Successfully uninstalled slackclient-1.3.2
+  Found existing installation: tensorflow-estimator 1.13.0
+    Uninstalling tensorflow-estimator-1.13.0:
+      Successfully uninstalled tensorflow-estimator-1.13.0
+  Found existing installation: questionary 1.1.1
+    Uninstalling questionary-1.1.1:
+      Successfully uninstalled questionary-1.1.1
+  Found existing installation: websockets 6.0
+    Uninstalling websockets-6.0:
+      Successfully uninstalled websockets-6.0
+  Found existing installation: sanic 19.3.1
+    Uninstalling sanic-19.3.1:
+      Successfully uninstalled sanic-19.3.1
+  Found existing installation: Sanic-Plugins-Framework 0.7.0
+    Uninstalling Sanic-Plugins-Framework-0.7.0:
+      Successfully uninstalled Sanic-Plugins-Framework-0.7.0
+  Found existing installation: Sanic-Cors 0.9.8
+    Uninstalling Sanic-Cors-0.9.8:
+      Successfully uninstalled Sanic-Cors-0.9.8
+  Found existing installation: cloudpickle 0.8.0
+    Uninstalling cloudpickle-0.8.0:
+      Successfully uninstalled cloudpickle-0.8.0
+  Found existing installation: absl-py 0.7.1
+    Uninstalling absl-py-0.7.1:
+      Successfully uninstalled absl-py-0.7.1
+  Found existing installation: setuptools 40.8.0
+    Uninstalling setuptools-40.8.0:
+      Successfully uninstalled setuptools-40.8.0
+  Found existing installation: tensorboard 1.13.1
+    Uninstalling tensorboard-1.13.1:
+      Successfully uninstalled tensorboard-1.13.1
+  Found existing installation: tensorflow 1.13.1
+    Uninstalling tensorflow-1.13.1:
+      Successfully uninstalled tensorflow-1.13.1
+  Found existing installation: botocore 1.12.169
+    Uninstalling botocore-1.12.169:
+      Successfully uninstalled botocore-1.12.169
+  Found existing installation: s3transfer 0.2.1
+    Uninstalling s3transfer-0.2.1:
+      Successfully uninstalled s3transfer-0.2.1
+  Found existing installation: boto3 1.9.169
+    Uninstalling boto3-1.9.169:
+      Successfully uninstalled boto3-1.9.169
+  Found existing installation: rasa-sdk 1.1.0
+    Uninstalling rasa-sdk-1.1.0:
+      Successfully uninstalled rasa-sdk-1.1.0
+  Found existing installation: python-engineio 3.8.1
+    Uninstalling python-engineio-3.8.1:
+      Successfully uninstalled python-engineio-3.8.1
+  Found existing installation: python-socketio 4.1.0
+    Uninstalling python-socketio-4.1.0:
+      Successfully uninstalled python-socketio-4.1.0
+  Found existing installation: jsonpickle 1.2
+    Uninstalling jsonpickle-1.2:
+      Successfully uninstalled jsonpickle-1.2
+  Found existing installation: SQLAlchemy 1.3.1
+    Uninstalling SQLAlchemy-1.3.1:
+      Successfully uninstalled SQLAlchemy-1.3.1
+  Found existing installation: redis 3.2.1
+    Uninstalling redis-3.2.1:
+      Successfully uninstalled redis-3.2.1
+  Found existing installation: networkx 2.3
+    Uninstalling networkx-2.3:
+      Successfully uninstalled networkx-2.3
+  Found existing installation: twilio 6.28.0
+    Uninstalling twilio-6.28.0:
+      Successfully uninstalled twilio-6.28.0
+  Found existing installation: matplotlib 3.0.3
+    Uninstalling matplotlib-3.0.3:
+      Successfully uninstalled matplotlib-3.0.3
+  Found existing installation: jsonschema 2.6.0
+    Uninstalling jsonschema-2.6.0:
+      Successfully uninstalled jsonschema-2.6.0
+Successfully installed SQLAlchemy-1.3.16 absl-py-0.9.0 aiohttp-3.6.2 attrs-19.3.0 boto3-1.12.38 botocore-1.15.38 cachetools-4.1.0 cloudpickle-1.2.2 dnspython-1.16.0 google-auth-1.13.1 google-auth-oauthlib-0.4.1 google-pasta-0.2.0 h11-0.8.1 h2-3.2.0 hpack-3.0.0 hstspreload-2020.4.7 httplib2-0.17.1 httpx-0.9.3 hyperframe-5.2.0 joblib-0.14.1 jsonpickle-1.3 jsonschema-3.2.0 matplotlib-3.1.3 mattermostwrapper-2.2 multidict-4.7.5 networkx-2.4 oauth2client-4.1.3 oauthlib-3.1.0 opt-einsum-3.2.0 pika-1.1.0 psycopg2-binary-2.8.5 pyasn1-0.4.8 pyasn1-modules-0.2.8 python-engineio-3.11.2 python-socketio-4.4.0 questionary-1.5.1 rasa-1.9.5 rasa-sdk-1.9.0 redis-3.4.1 requests-2.23.0 requests-oauthlib-1.3.0 rfc3986-1.4.0 rsa-4.0 s3transfer-0.3.3 sanic-19.12.2 sanic-cors-0.10.0.post3 sanic-plugins-framework-0.9.2 scikit-learn-0.22.2.post1 scipy-1.4.1 setuptools-46.1.3 slackclient-2.5.0 sniffio-1.1.0 tensorboard-2.1.1 tensorflow-2.1.0 tensorflow-addons-0.8.3 tensorflow-estimator-2.1.0 tensorflow-hub-0.7.0 tensorflow-probability-0.7.0 twilio-6.26.3 typeguard-2.7.1 ujson-1.35 websockets-8.1
+
+(base) D:\rasaProjects\kb>

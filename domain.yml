@@ -1,0 +1,51 @@
+actions:
+  - utter_greet
+  - utter_submit
+  - utter_goodbye
+  - utter_iamabot
+  - utter_ask_source
+  - utter_ask_destination
+
+intents:
+  - greet
+  - goodbye
+  - interface_info
+  - bot_challenge
+
+entities:
+  - app
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_submit:
+  - text: "Searching for interfaces from {source} to {destination}. Please wait ..."
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_source:
+  - text: "Please provide the source system?"
+
+  utter_ask_destination:
+  - text: "Please provide the destination system?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+forms:
+  - interface_form
+
+slots:
+  source:
+    type: unfeaturized
+    auto_fill: false
+
+  destination:
+    type: unfeaturized
+    auto_fill: false
