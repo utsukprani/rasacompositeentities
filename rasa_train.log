@@ -1,0 +1,32 @@
+(base) D:\rasaProjects\kb>rasa train
+2020-04-09 20:41:06 INFO     rasa.model  - Data (nlu-config) for NLU model section changed.
+Core stories/configuration did not change. No need to retrain Core model.
+Training NLU model...
+2020-04-09 20:41:06 INFO     rasa.nlu.training_data.training_data  - Training data stats:
+        - intent examples: 23 (4 distinct intents)
+        - Found intents: 'greet', 'goodbye', 'bot_challenge', 'interface_info'
+        - Number of response examples: 0 (0 distinct response)
+        - entity examples: 6 (1 distinct entities)
+        - found entities: 'app'
+
+2020-04-09 20:41:06 INFO     rasa.nlu.model  - Starting to train component WhitespaceTokenizer
+2020-04-09 20:41:06 INFO     rasa.nlu.model  - Finished training component.
+2020-04-09 20:41:06 INFO     rasa.nlu.model  - Starting to train component RegexFeaturizer
+2020-04-09 20:41:06 INFO     rasa.nlu.model  - Finished training component.
+2020-04-09 20:41:06 INFO     rasa.nlu.model  - Starting to train component LexicalSyntacticFeaturizer
+2020-04-09 20:41:06 INFO     rasa.nlu.model  - Finished training component.
+2020-04-09 20:41:06 INFO     rasa.nlu.model  - Starting to train component CountVectorsFeaturizer
+2020-04-09 20:41:06 INFO     rasa.nlu.model  - Finished training component.
+2020-04-09 20:41:06 INFO     rasa.nlu.model  - Starting to train component CountVectorsFeaturizer
+2020-04-09 20:41:06 INFO     rasa.nlu.model  - Finished training component.
+2020-04-09 20:41:06 INFO     rasa.nlu.model  - Starting to train component DIETClassifier
+Epochs: 100%|██████████████████████████████████████████████████████| 100/100 [00:07<00:00, 12.99it/s, t_loss=2.884, i_loss=0.004, entity_loss=0.019, role_loss=1.506, i_acc=1.000, entity_f1=0.945, role_f1=0.727]
+2020-04-09 20:41:28 INFO     rasa.utils.tensorflow.models  - Finished training.
+2020-04-09 20:41:28 INFO     rasa.nlu.model  - Finished training component.
+2020-04-09 20:41:28 INFO     rasa.nlu.model  - Starting to train component EntitySynonymMapper
+2020-04-09 20:41:28 INFO     rasa.nlu.model  - Finished training component.
+2020-04-09 20:41:29 INFO     rasa.nlu.model  - Successfully saved model into 'C:\Users\hpuser\AppData\Local\Temp\tmpb2wc5asp\nlu'
+NLU model training completed.
+Your Rasa model is trained and saved at 'D:\rasaProjects\kb\models\20200409-204129.tar.gz'.
+
+(base) D:\rasaProjects\kb>

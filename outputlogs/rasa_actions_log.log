@@ -1,4 +1,5 @@
 (base) D:\rasaProjects\kb>rasa run -vv actions
-2020-04-09 11:06:49 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
-2020-04-09 11:06:49 INFO     rasa_sdk.executor  - Registered function for 'interface_form'.
-2020-04-09 11:07:46 ERROR    rasa_sdk.endpoint  - Failed to extract slot source with action interface_form
+2020-04-09 21:04:05 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+2020-04-09 21:04:05 INFO     rasa_sdk.executor  - Registered function for 'interface_form'.
+c:\users\hpuser\anaconda3\lib\site-packages\rasa_sdk\executor.py:120: FutureWarning: Use of `utter_template` is deprecated. Use `utter_message(template=<template_name>)` instead.
+  FutureWarning,
