@@ -1,0 +1,109 @@
+(base) D:\rasaProjects\kb>rasa run -vv --cors "*"
+2020-04-09 11:06:24 DEBUG    rasa.cli.utils  - Parameter 'endpoints' not set. Using default location 'endpoints.yml' instead.
+2020-04-09 11:06:24 DEBUG    rasa.cli.utils  - Parameter 'credentials' not set. Using default location 'credentials.yml' instead.
+2020-04-09 11:06:25 DEBUG    rasa.model  - Extracted model to 'C:\Users\hpuser\AppData\Local\Temp\tmpleotyjju'.
+2020-04-09 11:06:26 DEBUG    sanic.root  - CORS: Configuring CORS with resources: {'/*': {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': True, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': {'/*': {'origins': ['*']}}, 'intercept_exceptions': True, 'always_send': True}}
+2020-04-09 11:06:26 DEBUG    rasa.core.utils  - Available web server routes:
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/                                                  GET                            hello
+2020-04-09 11:06:26 INFO     root  - Starting Rasa server on http://localhost:5005
+2020-04-09 11:06:26 DEBUG    rasa.core.utils  - Using the default number of Sanic workers (1).
+2020-04-09 11:06:26 INFO     root  - Enabling coroutine debugging. Loop id 2518857194688.
+2020-04-09 11:06:27 DEBUG    rasa.model  - Extracted model to 'C:\Users\hpuser\AppData\Local\Temp\tmp6_9h4vjd'.
+2020-04-09 11:06:28 DEBUG    rasa.utils.tensorflow.models  - Loading the model ...
+2020-04-09 11:06:30 DEBUG    rasa.utils.tensorflow.models  - Finished loading the model.
+2020-04-09 11:06:30 DEBUG    rasa.utils.tensorflow.models  - Building tensorflow prediction graph...
+2020-04-09 11:06:39 DEBUG    rasa.utils.tensorflow.models  - Finished building tensorflow prediction graph.
+2020-04-09 11:06:39 DEBUG    rasa.nlu.classifiers.diet_classifier  - Failed to load model for 'ResponseSelector'. Maybe you did not provide enough training data and no model was trained or the path 'C:\Users\hpuser\AppData\Local\Temp\tmp6_9h4vjd\nlu' doesn't exist?
+2020-04-09 11:06:39 DEBUG    rasa.core.tracker_store  - Connected to InMemoryTrackerStore.
+2020-04-09 11:06:39 DEBUG    rasa.core.lock_store  - Connected to lock store 'InMemoryLockStore'.
+2020-04-09 11:06:39 DEBUG    rasa.model  - Extracted model to 'C:\Users\hpuser\AppData\Local\Temp\tmprlkv3p7i'.
+2020-04-09 11:06:39 DEBUG    pykwalify.compat  - Using yaml library: c:\users\hpuser\anaconda3\lib\site-packages\ruamel\yaml\__init__.py
+2020-04-09 11:06:39 DEBUG    rasa.utils.tensorflow.models  - Loading the model ...
+2020-04-09 11:06:40 DEBUG    rasa.utils.tensorflow.models  - Finished loading the model.
+2020-04-09 11:06:40 DEBUG    rasa.utils.tensorflow.models  - Building tensorflow prediction graph...
+2020-04-09 11:06:42 DEBUG    rasa.utils.tensorflow.models  - Finished building tensorflow prediction graph.
+2020-04-09 11:06:42 DEBUG    rasa.core.nlg.generator  - Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-04-09 11:07:08 DEBUG    rasa.core.tracker_store  - Creating a new tracker for id 'bb76b2a2-154f-46d3-a477-9e281053ab4d'.
+2020-04-09 11:07:08 DEBUG    rasa.core.processor  - Starting a new session for conversation ID 'bb76b2a2-154f-46d3-a477-9e281053ab4d'.
+2020-04-09 11:07:08 DEBUG    rasa.core.processor  - Action 'action_session_start' ended with events '[<rasa.core.events.SessionStarted object at 0x0000024A000BABA8>, <rasa.core.events.ActionExecuted object at 0x0000024A000BAF98>]'.
+2020-04-09 11:07:08 DEBUG    rasa.core.processor  - Current slot values:
+        destination: None
+        requested_slot: None
+        source: None
+2020-04-09 11:07:08 DEBUG    rasa.nlu.classifiers.diet_classifier  - There is no trained model for 'ResponseSelector': The component is either not trained or didn't receive enough training data.
+2020-04-09 11:07:08 DEBUG    rasa.nlu.selectors.response_selector  - Adding following selector key to message property: default
+2020-04-09 11:07:08 DEBUG    rasa.core.processor  - Received user message 'namaste' with intent '{'name': 'greet', 'confidence': 0.9999245405197144}' and entities '[]'
+2020-04-09 11:07:08 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 4 events.
+2020-04-09 11:07:08 DEBUG    rasa.core.policies.memoization  - Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+2020-04-09 11:07:08 DEBUG    rasa.core.policies.memoization  - There is a memorised next action 'utter_greet'
+2020-04-09 11:07:08 DEBUG    rasa.core.policies.form_policy  - There is no active form
+2020-04-09 11:07:08 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_0_MemoizationPolicy
+2020-04-09 11:07:08 DEBUG    rasa.core.processor  - Predicted next action 'utter_greet' with confidence 1.00.
+2020-04-09 11:07:08 DEBUG    rasa.core.processor  - Action 'utter_greet' ended with events '[BotUttered('Hey! How are you?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {}, 1586410628.8760169)]'.
+2020-04-09 11:07:08 DEBUG    rasa.core.policies.memoization  - Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+2020-04-09 11:07:08 DEBUG    rasa.core.policies.memoization  - There is a memorised next action 'action_listen'
+2020-04-09 11:07:08 DEBUG    rasa.core.policies.mapping_policy  - There is no mapped action for the predicted intent, 'greet'.
+2020-04-09 11:07:08 DEBUG    rasa.core.policies.form_policy  - There is no active form
+2020-04-09 11:07:08 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_0_MemoizationPolicy
+2020-04-09 11:07:08 DEBUG    rasa.core.processor  - Predicted next action 'action_listen' with confidence 1.00.
+2020-04-09 11:07:08 DEBUG    rasa.core.processor  - Action 'action_listen' ended with events '[]'.
+2020-04-09 11:07:08 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'bb76b2a2-154f-46d3-a477-9e281053ab4d'.
+2020-04-09 11:07:33 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'bb76b2a2-154f-46d3-a477-9e281053ab4d'
+2020-04-09 11:07:33 DEBUG    rasa.nlu.classifiers.diet_classifier  - There is no trained model for 'ResponseSelector': The component is either not trained or didn't receive enough training data.
+2020-04-09 11:07:33 DEBUG    rasa.nlu.selectors.response_selector  - Adding following selector key to message property: default
+2020-04-09 11:07:33 DEBUG    rasa.core.processor  - Received user message 'do we have an interface from CRM to Ordering' with intent '{'name': 'interface_info', 'confidence': 0.9992045760154724}' and entities '[]'
+2020-04-09 11:07:33 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 8 events.
+2020-04-09 11:07:33 DEBUG    rasa.core.policies.memoization  - Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_interface_info': 1.0, 'prev_action_listen': 1.0}]
+2020-04-09 11:07:33 DEBUG    rasa.core.policies.memoization  - There is a memorised next action 'interface_form'
+2020-04-09 11:07:33 DEBUG    rasa.core.policies.form_policy  - There is no active form
+2020-04-09 11:07:33 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_0_MemoizationPolicy
+2020-04-09 11:07:33 DEBUG    rasa.core.processor  - Predicted next action 'interface_form' with confidence 1.00.
+2020-04-09 11:07:33 DEBUG    rasa.core.actions.action  - Calling action endpoint to run action 'interface_form'.
+2020-04-09 11:07:36 DEBUG    rasa.core.processor  - Action 'interface_form' ended with events '[BotUttered('Please provide the source system?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {}, 1586410656.0527108), <rasa.core.events.Form object at 0x0000024A02155B38>, <rasa.core.events.SlotSet object at 0x0000024A026E4F60>]'.
+2020-04-09 11:07:36 DEBUG    rasa.core.processor  - Current slot values:
+        destination: None
+        requested_slot: source
+        source: None
+2020-04-09 11:07:36 DEBUG    rasa.core.policies.memoization  - Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_interface_info': 1.0, 'prev_action_listen': 1.0}]
+2020-04-09 11:07:36 DEBUG    rasa.core.policies.memoization  - There is a memorised next action 'interface_form'
+2020-04-09 11:07:36 DEBUG    rasa.core.policies.mapping_policy  - There is no mapped action for the predicted intent, 'interface_info'.
+2020-04-09 11:07:36 DEBUG    rasa.core.policies.form_policy  - There is an active form 'interface_form'
+2020-04-09 11:07:36 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_3_FormPolicy
+2020-04-09 11:07:36 DEBUG    rasa.core.processor  - Predicted next action 'action_listen' with confidence 1.00.
+2020-04-09 11:07:36 DEBUG    rasa.core.processor  - Action 'action_listen' ended with events '[]'.
+2020-04-09 11:07:36 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'bb76b2a2-154f-46d3-a477-9e281053ab4d'.
+2020-04-09 11:07:44 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'bb76b2a2-154f-46d3-a477-9e281053ab4d'
+2020-04-09 11:07:44 DEBUG    rasa.nlu.classifiers.diet_classifier  - There is no trained model for 'ResponseSelector': The component is either not trained or didn't receive enough training data.
+2020-04-09 11:07:44 DEBUG    rasa.nlu.selectors.response_selector  - Adding following selector key to message property: default
+2020-04-09 11:07:44 DEBUG    rasa.core.processor  - Received user message 'CRM' with intent '{'name': 'interface_info', 'confidence': 0.9966979026794434}' and entities '[]'
+2020-04-09 11:07:44 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 14 events.
+2020-04-09 11:07:44 DEBUG    rasa.core.policies.memoization  - Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_interface_info': 1.0, 'prev_action_listen': 1.0}, {'prev_interface_form': 1.0, 'active_form_interface_form': 1.0, 'intent_interface_info': 1.0}, {'active_form_interface_form': 1.0, 'intent_interface_info': 1.0, 'prev_action_listen': 1.0}]
+2020-04-09 11:07:44 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2020-04-09 11:07:44 DEBUG    rasa.core.policies.form_policy  - There is an active form 'interface_form'
+2020-04-09 11:07:44 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_3_FormPolicy
+2020-04-09 11:07:44 DEBUG    rasa.core.processor  - Predicted next action 'interface_form' with confidence 1.00.
+2020-04-09 11:07:44 DEBUG    rasa.core.actions.action  - Calling action endpoint to run action 'interface_form'.
+2020-04-09 11:07:46 ERROR    rasa.core.actions.action  - Failed to extract slot source with action interface_form
+2020-04-09 11:07:46 DEBUG    rasa.core.policies.memoization  - Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_interface_info': 1.0, 'prev_action_listen': 1.0}, {'prev_interface_form': 1.0, 'active_form_interface_form': 1.0, 'intent_interface_info': 1.0}, {'active_form_interface_form': 1.0, 'intent_interface_info': 1.0, 'prev_action_listen': 1.0}]
+2020-04-09 11:07:46 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2020-04-09 11:07:46 DEBUG    rasa.core.policies.form_policy  - There is an active form 'interface_form'
+2020-04-09 11:07:46 DEBUG    rasa.core.policies.ensemble  - Execution of 'interface_form' was rejected. Setting its confidence to 0.0 in all predictions.
+2020-04-09 11:07:46 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_1_TEDPolicy
+2020-04-09 11:07:46 DEBUG    rasa.core.processor  - Predicted next action 'action_deactivate_form' with confidence 0.03.
+2020-04-09 11:07:46 DEBUG    rasa.core.processor  - Action 'action_deactivate_form' ended with events '[<rasa.core.events.Form object at 0x0000024A002CFD30>, <rasa.core.events.SlotSet object at 0x0000024A026E4FD0>]'.
+2020-04-09 11:07:46 DEBUG    rasa.core.processor  - Current slot values:
+        destination: None
+        requested_slot: None
+        source: None
+2020-04-09 11:07:46 DEBUG    rasa.core.policies.memoization  - Current tracker state [{'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'intent_interface_info': 1.0, 'prev_action_listen': 1.0}, {'prev_interface_form': 1.0, 'active_form_interface_form': 1.0, 'intent_interface_info': 1.0}, {'active_form_interface_form': 1.0, 'intent_interface_info': 1.0, 'prev_action_listen': 1.0}, {'prev_action_deactivate_form': 1.0, 'intent_interface_info': 1.0}]
+2020-04-09 11:07:46 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2020-04-09 11:07:46 DEBUG    rasa.core.policies.mapping_policy  - There is no mapped action for the predicted intent, 'interface_info'.
+2020-04-09 11:07:46 DEBUG    rasa.core.policies.form_policy  - There is no active form
+2020-04-09 11:07:46 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_1_TEDPolicy
+2020-04-09 11:07:46 DEBUG    rasa.core.processor  - Predicted next action 'action_listen' with confidence 0.57.
+2020-04-09 11:07:46 DEBUG    rasa.core.processor  - Action 'action_listen' ended with events '[]'.
+2020-04-09 11:07:46 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'bb76b2a2-154f-46d3-a477-9e281053ab4d'.

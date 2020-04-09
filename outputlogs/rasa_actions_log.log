@@ -1,0 +1,4 @@
+(base) D:\rasaProjects\kb>rasa run -vv actions
+2020-04-09 11:06:49 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+2020-04-09 11:06:49 INFO     rasa_sdk.executor  - Registered function for 'interface_form'.
+2020-04-09 11:07:46 ERROR    rasa_sdk.endpoint  - Failed to extract slot source with action interface_form
