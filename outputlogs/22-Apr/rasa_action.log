@@ -1,0 +1,20 @@
+(base) D:\rasaProjects\kb>rasa run actions -vv --cors "*"
+2020-04-22 21:54:11 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+2020-04-22 21:54:12 INFO     rasa_sdk.executor  - Registered function for 'interface_form'.
+2020-04-22 21:54:12 DEBUG    rasa_sdk.utils  - Using the default number of Sanic workers (1).
+2020-04-22 21:55:09 DEBUG    rasa_sdk.executor  - Received request to run 'interface_form'
+2020-04-22 21:55:09 DEBUG    rasa_sdk.forms  - There is no active form
+2020-04-22 21:55:09 DEBUG    rasa_sdk.forms  - Activated the form 'interface_form'
+2020-04-22 21:55:09 DEBUG    rasa_sdk.forms  - No pre-filled required slots to validate.
+2020-04-22 21:55:09 DEBUG    rasa_sdk.forms  - Validating user input '{'intent': {'name': 'interface_info', 'confidence': 0.9999502897262571}, 'entities': [{'entity': 'app', 'start': 20, 'end': 23, 'role': 'sourceApp', 'value': 'CRM', 'extractor': 'DIETClassifier'}, {'entity': 'app', 'start': 27, 'end': 35, 'role': 'destApp', 'value': 'Ordering', 'extractor': 'DIETClassifier'}], 'intent_ranking': [{'name': 'interface_info', 'confidence': 0.9999502897262571}, {'name': 'greet', 'confidence': 4.4847725803265355e-05}, {'name': 'bot_challenge', 'confidence': 4.688314675149741e-06}, {'name': 'goodbye', 'confidence': 1.7234955862477358e-07}], 'text': 'any interfaces from CRM to Ordering'}'
+2020-04-22 21:55:09 DEBUG    rasa_sdk.forms  - Extracted 'CRM' for extra slot 'source'.
+2020-04-22 21:55:09 DEBUG    rasa_sdk.forms  - Extracted 'Ordering' for extra slot 'destination'.
+2020-04-22 21:55:09 DEBUG    rasa_sdk.forms  - Validating extracted slots: {'source': 'CRM', 'destination': 'Ordering'}
+2020-04-22 21:55:09 DEBUG    rasa_sdk.forms  - No slots left to request, all required slots are filled:
+        source: CRM
+        destination: Ordering
+2020-04-22 21:55:09 DEBUG    rasa_sdk.forms  - Submitting the form 'interface_form'
+c:\users\hpuser\anaconda3\lib\site-packages\rasa_sdk\executor.py:120: FutureWarning: Use of `utter_template` is deprecated. Use `utter_message(template=<template_name>)` instead.
+  FutureWarning,
+2020-04-22 21:55:09 DEBUG    rasa_sdk.forms  - Deactivating the form 'interface_form'
+2020-04-22 21:55:09 DEBUG    rasa_sdk.executor  - Finished running 'interface_form'

@@ -1,0 +1,9 @@
+CRM
+UFE
+Portal
+Fonua
+Ordering
+Invoicing
+AMDD
+AR
+RLC
