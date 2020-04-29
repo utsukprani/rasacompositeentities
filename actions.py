@@ -56,5 +56,6 @@ class InterfaceInfoAction(FormAction):
             after all required slots are filled"""
 
         # utter submit template
-        dispatcher.utter_message(template='utter_submit')
+        # dispatcher.utter_message(template='utter_submit')
+        dispatcher.utter_message(template='utter_submit', source=tracker.get_slot("source"), destination=tracker.get_slot("destination"))
         return []
