@@ -30,6 +30,11 @@
 - which all interfaces are to [Ordering]{"entity":"app", "role":"destApp"} from [CRM]{"entity":"app", "role":"sourceApp"}
 - give all interfaces from [Invoicing]{"entity":"app", "role":"sourceApp"} to [RLC]{"entity":"app", "role":"destApp"}
 - need to know about existing interfaces to [AR]{"entity":"app", "role":"destApp"} from [Portal]{"entity":"app", "role":"sourceApp"}
+- source system is [Portal]{"entity":"app", "role":"sourceApp"}
+- destination is [Ordering]{"entity":"app", "role":"destApp"}
+- towards [CRM]{"entity":"app", "role":"destApp"}
+- interfaces where source is [CRM]{"entity":"app", "role":"sourceApp"}
+- source as [Invoicing]{"entity":"app", "role":"sourceApp"}
 
 ## intent:bot_challenge
 - are you a bot?

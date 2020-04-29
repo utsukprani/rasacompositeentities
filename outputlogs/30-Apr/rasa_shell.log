@@ -1,0 +1,151 @@
+(base) D:\rasaProjects\kb>rasa shell -vv
+2020-04-30 03:51:16 DEBUG    rasa.model  - Extracted model to 'C:\Users\hpuser\AppData\Local\Temp\tmprv0rm6sr'.
+2020-04-30 03:51:16 DEBUG    rasa.cli.utils  - Parameter 'endpoints' not set. Using default location 'endpoints.yml' instead.
+2020-04-30 03:51:16 DEBUG    rasa.cli.utils  - Parameter 'credentials' not set. Using default location 'credentials.yml' instead.
+2020-04-30 03:51:17 DEBUG    rasa.model  - Extracted model to 'C:\Users\hpuser\AppData\Local\Temp\tmp28ve6ar2'.
+2020-04-30 03:51:17 INFO     root  - Connecting to channel 'cmdline' which was specified by the '--connector' argument. Any other channels will be ignored. To connect to all given channels, omit the '--connector' argument.
+2020-04-30 03:51:17 DEBUG    sanic.root  - CORS: Configuring CORS with resources: {'/*': {'origins': [''], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': True, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': {'/*': {'origins': ''}}, 'intercept_exceptions': True, 'always_send': True}}
+2020-04-30 03:51:17 DEBUG    rasa.core.utils  - Available web server routes:
+/webhooks/rest                                     GET                            custom_webhook_CmdlineInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_CmdlineInput.receive
+/                                                  GET                            hello
+2020-04-30 03:51:17 INFO     root  - Starting Rasa server on http://localhost:5005
+2020-04-30 03:51:17 DEBUG    rasa.core.utils  - Using the default number of Sanic workers (1).
+2020-04-30 03:51:17 INFO     root  - Enabling coroutine debugging. Loop id 1672707051248.
+2020-04-30 03:51:18 DEBUG    rasa.model  - Extracted model to 'C:\Users\hpuser\AppData\Local\Temp\tmpjqz6cztl'.
+2020-04-30 03:51:18 DEBUG    rasa.utils.tensorflow.models  - Loading the model ...
+2020-04-30 03:51:21 DEBUG    rasa.utils.tensorflow.models  - Finished loading the model.
+2020-04-30 03:51:21 DEBUG    rasa.utils.tensorflow.models  - Building tensorflow prediction graph...
+2020-04-30 03:51:25 DEBUG    rasa.utils.tensorflow.models  - Finished building tensorflow prediction graph.
+2020-04-30 03:51:25 DEBUG    rasa.core.tracker_store  - Connected to InMemoryTrackerStore.
+2020-04-30 03:51:25 DEBUG    rasa.core.lock_store  - Connected to lock store 'InMemoryLockStore'.
+2020-04-30 03:51:26 DEBUG    rasa.model  - Extracted model to 'C:\Users\hpuser\AppData\Local\Temp\tmp0eayac2l'.
+2020-04-30 03:51:26 DEBUG    pykwalify.compat  - Using yaml library: c:\users\hpuser\anaconda3\lib\site-packages\ruamel\yaml\__init__.py
+2020-04-30 03:51:26 DEBUG    rasa.utils.tensorflow.models  - Loading the model ...
+2020-04-30 03:51:26 DEBUG    rasa.utils.tensorflow.models  - Finished loading the model.
+2020-04-30 03:51:26 DEBUG    rasa.utils.tensorflow.models  - Building tensorflow prediction graph...
+2020-04-30 03:51:27 DEBUG    rasa.utils.tensorflow.models  - Finished building tensorflow prediction graph.
+2020-04-30 03:51:27 DEBUG    rasa.core.nlg.generator  - Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+Bot loaded. Type a message and press enter (use '/stop' to exit):
+Your input ->  interfaces from RLC to Ordering
+2020-04-30 03:51:47 DEBUG    rasa.core.tracker_store  - Creating a new tracker for id 'd74069e949dd42d9ae7b1789d3e5fdf3'.
+2020-04-30 03:51:47 DEBUG    rasa.core.processor  - Starting a new session for conversation ID 'd74069e949dd42d9ae7b1789d3e5fdf3'.
+2020-04-30 03:51:47 DEBUG    rasa.core.processor  - Action 'action_session_start' ended with events '[<rasa.core.events.SessionStarted object at 0x0000018501401C50>, <rasa.core.events.ActionExecuted object at 0x00000185014011D0>]'.
+2020-04-30 03:51:47 DEBUG    rasa.core.processor  - Current slot values:
+        destination: None
+        requested_slot: None
+        source: None
+2020-04-30 03:51:48 DEBUG    rasa.core.processor  - Received user message 'interfaces from RLC to Ordering' with intent '{'name': 'interface_info', 'confidence': 0.999957799911499}' and entities '[{'entity': 'app', 'start': 16, 'end': 19, 'role': 'destApp', 'value': 'RLC', 'extractor': 'DIETClassifier'}, {'entity': 'app', 'start': 23, 'end': 31, 'role': 'destApp', 'value': 'Ordering', 'extractor': 'DIETClassifier'}]'
+2020-04-30 03:51:48 DEBUG    rasa.core.processor  - Current slot values:
+        destination: None
+        requested_slot: None
+        source: None
+2020-04-30 03:51:48 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 4 events.
+2020-04-30 03:51:48 DEBUG    rasa.core.policies.memoization  - Current tracker state [None, None, None, {}, {'intent_interface_info': 1.0, 'prev_action_listen': 1.0, 'entity_app': 1.0}]
+2020-04-30 03:51:48 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2020-04-30 03:51:48 DEBUG    rasa.core.policies.form_policy  - There is no active form
+2020-04-30 03:51:48 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_1_TEDPolicy
+2020-04-30 03:51:48 DEBUG    rasa.core.processor  - Predicted next action 'interface_form' with confidence 0.95.
+2020-04-30 03:51:48 DEBUG    rasa.core.actions.action  - Calling action endpoint to run action 'interface_form'.
+2020-04-30 03:51:50 DEBUG    rasa.core.processor  - Action 'interface_form' ended with events '[BotUttered('Please provide the source system?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"destination": ["RLC", "Ordering"]}, 1588198910.2100027), <rasa.core.events.Form object at 0x000001850494ACF8>, <rasa.core.events.SlotSet object at 0x000001850494AF60>, <rasa.core.events.SlotSet object at 0x000001850494AE80>]'.
+2020-04-30 03:51:50 DEBUG    rasa.core.processor  - Current slot values:
+        destination: ['RLC', 'Ordering']
+        requested_slot: source
+        source: None
+2020-04-30 03:51:50 DEBUG    rasa.core.policies.memoization  - Current tracker state [None, None, None, {}, {'intent_interface_info': 1.0, 'prev_action_listen': 1.0, 'entity_app': 1.0}]
+2020-04-30 03:51:50 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2020-04-30 03:51:50 DEBUG    rasa.core.policies.mapping_policy  - There is no mapped action for the predicted intent, 'interface_info'.
+2020-04-30 03:51:50 DEBUG    rasa.core.policies.form_policy  - There is an active form 'interface_form'
+2020-04-30 03:51:50 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_3_FormPolicy
+2020-04-30 03:51:50 DEBUG    rasa.core.processor  - Predicted next action 'action_listen' with confidence 1.00.
+2020-04-30 03:51:50 DEBUG    rasa.core.processor  - Action 'action_listen' ended with events '[]'.
+2020-04-30 03:51:50 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'd74069e949dd42d9ae7b1789d3e5fdf3'.
+Please provide the source system?
+Your input ->  source is RLC
+2020-04-30 03:52:39 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'd74069e949dd42d9ae7b1789d3e5fdf3'
+2020-04-30 03:52:39 DEBUG    rasa.core.processor  - Received user message 'source is RLC' with intent '{'name': 'interface_info', 'confidence': 0.998301088809967}' and entities '[{'entity': 'app', 'start': 10, 'end': 13, 'role': 'destApp', 'value': 'RLC', 'extractor': 'DIETClassifier'}]'
+2020-04-30 03:52:39 DEBUG    rasa.core.processor  - Current slot values:
+        destination: ['RLC', 'Ordering']
+        requested_slot: source
+        source: None
+2020-04-30 03:52:39 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 11 events.
+2020-04-30 03:52:39 DEBUG    rasa.core.policies.memoization  - Current tracker state [None, {}, {'intent_interface_info': 1.0, 'prev_action_listen': 1.0, 'entity_app': 1.0}, {'intent_interface_info': 1.0, 'active_form_interface_form': 1.0, 'entity_app': 1.0, 'prev_interface_form': 1.0}, {'intent_interface_info': 1.0, 'active_form_interface_form': 1.0, 'prev_action_listen': 1.0, 'entity_app': 1.0}]
+2020-04-30 03:52:39 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2020-04-30 03:52:39 DEBUG    rasa.core.policies.form_policy  - There is an active form 'interface_form'
+2020-04-30 03:52:39 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_3_FormPolicy
+2020-04-30 03:52:39 DEBUG    rasa.core.processor  - Predicted next action 'interface_form' with confidence 1.00.
+2020-04-30 03:52:39 DEBUG    rasa.core.actions.action  - Calling action endpoint to run action 'interface_form'.
+2020-04-30 03:52:41 DEBUG    rasa.core.processor  - Action 'interface_form' ended with events '[BotUttered('Please provide the source system?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"destination": "RLC", "requested_slot": "source"}, 1588198961.588672), <rasa.core.events.SlotSet object at 0x0000018504C63470>, <rasa.core.events.SlotSet object at 0x0000018504C634E0>]'.
+2020-04-30 03:52:41 DEBUG    rasa.core.processor  - Current slot values:
+        destination: RLC
+        requested_slot: source
+        source: None
+2020-04-30 03:52:41 DEBUG    rasa.core.policies.memoization  - Current tracker state [None, None, None, {}, {'intent_interface_info': 1.0, 'prev_action_listen': 1.0, 'entity_app': 1.0}]
+2020-04-30 03:52:41 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2020-04-30 03:52:41 DEBUG    rasa.core.policies.mapping_policy  - There is no mapped action for the predicted intent, 'interface_info'.
+2020-04-30 03:52:41 DEBUG    rasa.core.policies.form_policy  - There is an active form 'interface_form'
+2020-04-30 03:52:41 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_3_FormPolicy
+2020-04-30 03:52:41 DEBUG    rasa.core.processor  - Predicted next action 'action_listen' with confidence 1.00.
+2020-04-30 03:52:41 DEBUG    rasa.core.processor  - Action 'action_listen' ended with events '[]'.
+2020-04-30 03:52:41 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'd74069e949dd42d9ae7b1789d3e5fdf3'.
+Please provide the source system?
+Your input ->  from RLC
+2020-04-30 03:53:41 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'd74069e949dd42d9ae7b1789d3e5fdf3'
+2020-04-30 03:53:41 DEBUG    rasa.core.processor  - Received user message 'from RLC' with intent '{'name': 'interface_info', 'confidence': 0.9991274476051331}' and entities '[{'entity': 'app', 'start': 5, 'end': 8, 'role': 'destApp', 'value': 'RLC', 'extractor': 'DIETClassifier'}]'
+2020-04-30 03:53:41 DEBUG    rasa.core.processor  - Current slot values:
+        destination: RLC
+        requested_slot: source
+        source: None
+2020-04-30 03:53:41 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 17 events.
+2020-04-30 03:53:41 DEBUG    rasa.core.policies.memoization  - Current tracker state [None, {}, {'intent_interface_info': 1.0, 'prev_action_listen': 1.0, 'entity_app': 1.0}, {'intent_interface_info': 1.0, 'active_form_interface_form': 1.0, 'entity_app': 1.0, 'prev_interface_form': 1.0}, {'intent_interface_info': 1.0, 'active_form_interface_form': 1.0, 'prev_action_listen': 1.0, 'entity_app': 1.0}]
+2020-04-30 03:53:41 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2020-04-30 03:53:41 DEBUG    rasa.core.policies.form_policy  - There is an active form 'interface_form'
+2020-04-30 03:53:41 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_3_FormPolicy
+2020-04-30 03:53:41 DEBUG    rasa.core.processor  - Predicted next action 'interface_form' with confidence 1.00.
+2020-04-30 03:53:41 DEBUG    rasa.core.actions.action  - Calling action endpoint to run action 'interface_form'.
+2020-04-30 03:53:43 DEBUG    rasa.core.processor  - Action 'interface_form' ended with events '[BotUttered('Please provide the source system?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"destination": "RLC", "requested_slot": "source"}, 1588199023.465664), <rasa.core.events.SlotSet object at 0x0000018504F04908>, <rasa.core.events.SlotSet object at 0x0000018504F04978>]'.
+2020-04-30 03:53:43 DEBUG    rasa.core.processor  - Current slot values:
+        destination: RLC
+        requested_slot: source
+        source: None
+2020-04-30 03:53:43 DEBUG    rasa.core.policies.memoization  - Current tracker state [None, None, None, {}, {'intent_interface_info': 1.0, 'prev_action_listen': 1.0, 'entity_app': 1.0}]
+2020-04-30 03:53:43 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2020-04-30 03:53:43 DEBUG    rasa.core.policies.mapping_policy  - There is no mapped action for the predicted intent, 'interface_info'.
+2020-04-30 03:53:43 DEBUG    rasa.core.policies.form_policy  - There is an active form 'interface_form'
+2020-04-30 03:53:43 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_3_FormPolicy
+2020-04-30 03:53:43 DEBUG    rasa.core.processor  - Predicted next action 'action_listen' with confidence 1.00.
+2020-04-30 03:53:43 DEBUG    rasa.core.processor  - Action 'action_listen' ended with events '[]'.
+2020-04-30 03:53:43 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'd74069e949dd42d9ae7b1789d3e5fdf3'.
+Please provide the source system?
+Your input ->  RLC
+2020-04-30 03:54:46 DEBUG    rasa.core.tracker_store  - Recreating tracker for id 'd74069e949dd42d9ae7b1789d3e5fdf3'
+2020-04-30 03:54:46 DEBUG    rasa.core.processor  - Received user message 'RLC' with intent '{'name': 'interface_info', 'confidence': 0.9815463423728943}' and entities '[{'entity': 'app', 'start': 0, 'end': 3, 'role': 'destApp', 'value': 'RLC', 'extractor': 'DIETClassifier'}]'
+2020-04-30 03:54:46 DEBUG    rasa.core.processor  - Current slot values:
+        destination: RLC
+        requested_slot: source
+        source: None
+2020-04-30 03:54:46 DEBUG    rasa.core.processor  - Logged UserUtterance - tracker now has 23 events.
+2020-04-30 03:54:46 DEBUG    rasa.core.policies.memoization  - Current tracker state [None, {}, {'intent_interface_info': 1.0, 'prev_action_listen': 1.0, 'entity_app': 1.0}, {'intent_interface_info': 1.0, 'active_form_interface_form': 1.0, 'entity_app': 1.0, 'prev_interface_form': 1.0}, {'intent_interface_info': 1.0, 'active_form_interface_form': 1.0, 'prev_action_listen': 1.0, 'entity_app': 1.0}]
+2020-04-30 03:54:46 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2020-04-30 03:54:46 DEBUG    rasa.core.policies.form_policy  - There is an active form 'interface_form'
+2020-04-30 03:54:46 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_3_FormPolicy
+2020-04-30 03:54:46 DEBUG    rasa.core.processor  - Predicted next action 'interface_form' with confidence 1.00.
+2020-04-30 03:54:46 DEBUG    rasa.core.actions.action  - Calling action endpoint to run action 'interface_form'.
+2020-04-30 03:54:48 DEBUG    rasa.core.processor  - Action 'interface_form' ended with events '[BotUttered('Please provide the source system?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {"destination": "RLC", "requested_slot": "source"}, 1588199088.5650015), <rasa.core.events.SlotSet object at 0x0000018504B264E0>, <rasa.core.events.SlotSet object at 0x0000018504B35080>]'.
+2020-04-30 03:54:48 DEBUG    rasa.core.processor  - Current slot values:
+        destination: RLC
+        requested_slot: source
+        source: None
+2020-04-30 03:54:48 DEBUG    rasa.core.policies.memoization  - Current tracker state [None, None, None, {}, {'intent_interface_info': 1.0, 'prev_action_listen': 1.0, 'entity_app': 1.0}]
+2020-04-30 03:54:48 DEBUG    rasa.core.policies.memoization  - There is no memorised next action
+2020-04-30 03:54:48 DEBUG    rasa.core.policies.mapping_policy  - There is no mapped action for the predicted intent, 'interface_info'.
+2020-04-30 03:54:48 DEBUG    rasa.core.policies.form_policy  - There is an active form 'interface_form'
+2020-04-30 03:54:48 DEBUG    rasa.core.policies.ensemble  - Predicted next action using policy_3_FormPolicy
+2020-04-30 03:54:48 DEBUG    rasa.core.processor  - Predicted next action 'action_listen' with confidence 1.00.
+2020-04-30 03:54:48 DEBUG    rasa.core.processor  - Action 'action_listen' ended with events '[]'.
+2020-04-30 03:54:48 DEBUG    rasa.core.lock_store  - Deleted lock for conversation 'd74069e949dd42d9ae7b1789d3e5fdf3'.
+Please provide the source system?
+Your input ->  /stop
+2020-04-30 03:55:53 INFO     root  - Killing Sanic server now.
+
+(base) D:\rasaProjects\kb>
